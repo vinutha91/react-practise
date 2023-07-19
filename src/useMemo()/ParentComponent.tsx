@@ -14,7 +14,7 @@ export const ParentComponentWithUseMemo = () => {
   const useMemoRef = useRef(0);
   
   const incrementUseMemoRef = () => useMemoRef.current++;
-  //const memoizedValue = useMemoRef.current++;
+  //const memoizedValue = useMemoRef.current++; // if you uncomment this, <UseMemoCounts /> component will re-render each time the <ParentComponent /> renders.
   const memoizedValue = useMemo(() => incrementUseMemoRef(), [times]);
 
   const whichWineGoesBest = () => {
