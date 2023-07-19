@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CONSTANTS } from "../constants/constants";
 import { Button } from "./Button";
-import { Counts } from "./Counts";
+import { Counts, MemoizedCounts } from "./Counts";
 const { MOZARELLA, CHEDDAR, PARMESAN, CHARDONAY, MERLOT, CABERNET } = CONSTANTS;
 export const ParentComponent = () => {
   const [cheeseType, setCheeseType] = useState("");
@@ -49,7 +49,7 @@ export const ParentComponent = () => {
           goes best.
         </p>
       )}
-      <Counts />
+      <MemoizedCounts />
     </div>
   );
 };

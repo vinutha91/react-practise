@@ -1,3 +1,4 @@
+import React from "react";
 import { useRef } from "react";
 
 export const Counts = () =>{
@@ -13,3 +14,4 @@ export const Counts = () =>{
         </div>
       );
 }
+export const MemoizedCounts = React.memo(Counts)
