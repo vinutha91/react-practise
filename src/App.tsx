@@ -6,6 +6,7 @@ import { ParentComponentWithUseMemo } from './useMemo()/ParentComponent';
 import { ParentComponentForCallback } from './useCallback()/example1/ParentComponentForCallback';
 import { ParentComponentWithoutuseCallback } from './useCallback()/example2/ParentComponentWithoutuseCallback';
 import { ParentComponentWithUseCallback } from './useCallback()/example2/ParentComponentWithUseCallback';
+import { UseCallback } from './useCallback()/example3/UseCallback';
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
        <br/>
        <br/>
        <ParentComponentWithUseCallback />
+       {/*********************/}
+       <br/>
+       <br/>
+       <UseCallback />
     </div>
   );
 }
