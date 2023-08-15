@@ -17,6 +17,7 @@ export const withFastTrackOrder = (BaseUserComponent: any) => (props: any) => {
       ) : (
         <div>Not Fast Tracked</div>
       )}
+      {props.children}
     </BaseUserComponent>
   );
   return baseElements;
